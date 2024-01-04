@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: blue; /* Fundo azul */
+        }
+
+        #login-box {
+            background-color: white; /* Quadrado branco */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            font-size: 20px; /* Tamanho da fonte aumentado */
+        }
+
+        /* Estilo adicional para o botão */
+        #btnEnviar2 {
+            font-size: 18px; /* Tamanho da fonte do botão */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="login-box">
+        <h3 class="text-center text-info">Cadastre seu robô</h3>
+        <form id="login-form" class="form" action="" method="post">
+            <div class="form-group">
+                <label for="tipo" class="text-info">Tipo:</label><br>
+                <select name="tipo" id="tipo" class="form-control">
+                    <option value="MostraBot">MostraBot</option>
+                    <option value="Placa Maker">Placa Maker</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero" class="text-info">Número:</label><br>
+                <input type="text" name="numero" id="numero" class="form-control">
+            </div>
+            <div class="form-group">
+                <br>
+                <input type="button" name="submit" class="btn btn-info btn-md" id='btnEnviar2' value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/index2.js"></script>
+
+</body>
+
+</html>

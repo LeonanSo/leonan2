@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<style>
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .welcome-message {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 16px; /* Espaço entre os cards */
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+      position: relative;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .click-button {
+      margin-top: 16px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 1; /* Certifica-se de que o botão está acima da barra azul */
+    }
+
+    .blue-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-color: #3498db;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      z-index: 0; /* Garante que a barra azul está abaixo do botão */
+      transform: scale(1.1);
+    }
+
+    .back{
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 1; /* Certifica-se de que o botão está acima da barra azul */
+      transform: scale(1.1);
+    }
+
+    .button{
+      transition: all .5s;
+      border: 10px solid transparent;
+      border: 10px solid #136497;
+      border-radius: 50%;
+    }
+
+</style>
+
+</head>
+<body>
+
+  <div class="welcome-message">Bem-vindo</div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="./img/Bot.jpg" alt="Card Image">
+      <div class="card-content">
+        <div class="card-title">Mostrabot</div>
+        <div class="card-text">O Mostrabot é um revolucionário assistente pessoal automatizado projetado para operar diretamente em dispositivos móveis. Este inovador robô virtual foi desenvolvido para simplificar tarefas cotidianas, oferecendo aos usuários uma experiência conveniente e eficienteㅤㅤㅤㅤㅤㅤㅤㅤ.
+        </div>
+        <button class="click-button" onclick='goToCadastro2Page()'>Clique aqui</button>
+        <div class="blue-bar"></div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="./img/Placa Maker.webp" alt="Card Image">
+      <div class="card-content">
+        <div class="card-title">Placa Maker</div>
+        <div class="card-text">A Placa Maker é uma plataforma que se destaca como um verdadeiro catalisador para a criatividade e inovação. Projetada para entusiastas, inventores e mentes curiosas, essa placa é muito mais do que um simples dispositivo eletrônico - é um convite para a expressão criativa e o desenvolvimento de soluções únicas.</div>
+        <button class="click-button" onclick='goToCadastro2Page()'>Clique aqui</button>
+        <div class="blue-bar"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+
+    <button onclick='goToLoginPage()' class='back'>Voltar</button>
+
+    <script>
+        function goToLoginPage(){
+            window.location.href = 'http://localhost/legobatman/login.html';
+        }
+    </script>
+
+<script>
+  function goToCadastro2Page(){
+      window.location.href = 'cadastro2.html';
+  }
+</script>
+    
+</body>
+</html> 
